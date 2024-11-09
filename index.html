@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Login</title>
+</head>
+<body>
+    <h1><span>Login</span> Page</h1>
+
+    <div class="box-login">
+        <h2>Login</h2>
+        
+        <form id="loginForm" onsubmit="return validateLoginForm(event)">
+            <div class="input">
+                <p>Username:</p>
+                <input type="text" id="username" required>
+
+                <p>Email:</p>
+                <input type="email" id="email" required>
+
+                <p>Password:</p>
+                <input type="password" id="password" required>
+            </div>
+
+            <div id="error-message" style="display: none; color: red;">
+                Please fill in all fields.
+            </div>
+           
+            <div class="btn-login">
+                <button type="submit">Login</button>
+            </div>
+        </form>
+
+        <div class="signup">
+            <p>Don't have an account? <span><a href="signup.html">Sign up</a></span></p>
+        </div>
+    </div>
+
+    <script>
+        function validateLoginForm(event) {
+            event.preventDefault();  // Prevent form from submitting immediately
+
+            const username = document.getElementById('username').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const password = document.getElementById('password').value.trim();
+            const errorMessage = document.getElementById('error-message');
+
+            // Check if all fields are filled
+            if (username && email && password) {
+                errorMessage.style.display = "none";
+                window.location.href = "login.html";  // Redirect to the login page
+                return true;  // Form is valid
+            } else {
+                errorMessage.style.display = "block";
+                return false;  // Prevent form submission
+            }
+        }
+    </script>
+
+</body>
+</html>

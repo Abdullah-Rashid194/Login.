@@ -1,0 +1,388 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background: #000;
+}
+h1{
+    text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 0.0001px;
+    color: #fff;
+    font-size: 4rem;
+    font-weight: 700;
+}
+h1 span{
+    color: #03e9f4;
+}
+
+.box-login {
+    border: 3px solid #000;
+    width: 30rem;
+    margin-left: 33rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    border-radius: .9rem;
+    box-shadow: 5px 5px 50px #03e9f4;
+}
+
+.box-login h2 {
+    text-align: center;
+    padding: 2rem;
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.box-login p {
+    display: block;
+    padding-left: 1rem;
+    padding-bottom: .5rem;
+    padding-top: .5rem;
+    font-size: 1.5rem;
+    font-weight: 00;
+    color: #fff;
+}
+
+.box-login input {
+    margin-left: 1rem;
+    width: 90%;
+    border: 1px solid #fff;
+    height: 2rem;
+    border-radius: .5rem;
+    padding-left: 1rem;
+    color: #fff;
+}
+
+.box-login input:hover {
+    background: #656565;
+    color: #fff;
+}
+
+.box-login input:active {
+    background-color: #656565;
+}
+
+.btn-login {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    text-align: center;
+}
+
+.btn-login button {
+    padding-left: 7rem;
+    padding-right: 7rem;
+    padding-top: .4rem;
+    padding-bottom: .4rem;
+    text-decoration: none;
+    border-radius: .5rem;
+    color: #000;
+    font-weight: 600;
+    font-size: 1.6rem;
+    background: #03e9f4;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-login button:hover {
+    background: #03e9f4;
+    opacity: 0.9;
+}
+#error-message {
+    color: red;
+    display: none;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+.signup {
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+.signup p {
+    color: #fff;
+}
+
+.signup span a {
+    color: #03e9f4;
+    text-decoration: none; 
+    font-weight: 600;
+}
+
+.signup span a:hover {
+    color: #016a70;  
+    background-color: #03e9f4;  
+    border-radius: 5px; 
+    padding: 0.2rem 0.5rem;
+}
+
+
+.thnks-box{
+    box-shadow: 5px 5px 50px#03e9f4;
+    width: 50rem; 
+    height: 30rem;
+    margin-left: 25rem;
+    margin-top: 10rem;
+}
+.thanks{
+    color: #fff;
+    text-align: center;
+}
+.thanks h1{
+    font-size: 3.5rem;
+    padding: 2rem;
+}
+.thanks h1 span{
+    color: #03e9f4;
+}
+.thanks p{
+    font-size: 1.5rem;
+    padding: 2rem;
+}
+
+.wrapper {
+    display: flex;
+    min-height: 10vh;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding-top: 4rem;
+}
+
+.wrapper a {
+    position: relative;
+    padding: 25px 30px;
+    letter-spacing: 4px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    margin-right: 7px;
+    font-weight: 700;
+    transition: 0.5s;
+    background: #000;
+    overflow: hidden;
+    border: .5px solid #03e9f4;
+}
+
+a:hover {
+    color: #000;
+    background-color: #03e9f4;
+    box-shadow: 
+        0 0 10px #03e9f4,
+        0 0 20px #03e9f4,
+        0 0 40px #03e9f4,
+        0 0 80px #03e9f4,
+        0 0 120px #03e9f4,
+        0 0 200px #03e9f4;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.box-signup {
+    border: 3px solid #000;
+    width: 30rem;
+    margin-left: 33rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    border-radius: .9rem;
+    box-shadow: 5px 5px 50px #03e9f4;
+}
+
+.box-signup h2 {
+    text-align: center;
+    padding: 2rem;
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.box-signup p {
+    display: block;
+    padding-left: 1rem;
+    padding-bottom: .5rem;
+    padding-top: .5rem;
+    font-size: 1.5rem;
+    font-weight: 00;
+    color: #fff;
+}
+
+.box-signup input {
+    margin-left: 1rem;
+    width: 90%;
+    border: 1px solid #fff;
+    height: 2rem;
+    border-radius: .5rem;
+    padding-left: 1rem;
+    color: #fff;
+}
+
+.box-signup input:hover {
+    background: #656565;
+    color: #fff;
+}
+
+.box-signup input:active {
+    background-color: #656565;
+}
+
+.btn-signup {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    text-align: center;
+}
+
+.btn-signup button {
+    padding-left: 7rem;
+    padding-right: 7rem;
+    padding-top: .4rem;
+    padding-bottom: .4rem;
+    text-decoration: none;
+    border-radius: .5rem;
+    color: #000;
+    font-weight: 600;
+    font-size: 1.6rem;
+    background: #03e9f4;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-signup button:hover {
+    background: #03e9f4;
+    opacity: 0.9;
+}
+#error-message {
+    color: red;
+    display: none;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+.login {
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+.login p {
+    color: #fff;
+}
+
+.login span a {
+    color: #03e9f4;
+    text-decoration: none; 
+    font-weight: 600;
+}
+
+.login span a:hover {
+    color: #016a70;  
+    background-color: #03e9f4;  
+    border-radius: 5px; 
+    padding: 0.2rem 0.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* For devices with a width up to 768px (tablets and smaller devices) */
+@media (max-width: 768px) {
+    .box-login, .box-signup, .thnks-box {
+        width: 90%;
+        margin: 1rem auto;
+    }
+
+    .box-login h2, .box-signup h2 {
+        font-size: 2.5rem;
+        padding: 1.5rem;
+    }
+
+    .box-login p, .box-signup p, .thanks p {
+        font-size: 1.2rem;
+    }
+
+    .btn-login button, .btn-signup button {
+        padding-left: 3rem;
+        padding-right: 3rem;
+        font-size: 1.4rem;
+    }
+
+    .wrapper {
+        flex-direction: column;
+        gap: 20px;
+        padding-top: 2rem;
+    }
+
+    .wrapper a {
+        padding: 15px 20px;
+        font-size: 1rem;
+    }
+
+    .thanks h1 {
+        font-size: 2.5rem;
+        padding: 1.5rem;
+    }
+}
+
+/* For devices with a width up to 480px (mobile phones) */
+@media (max-width: 480px) {
+    .box-login, .box-signup, .thnks-box {
+        width: 95%;
+        margin: 1rem auto;
+        padding: 1rem;
+    }
+
+    .box-login h2, .box-signup h2, .thanks h1 {
+        font-size: 2rem;
+        padding: 1rem;
+    }
+
+    .box-login p, .box-signup p, .thanks p {
+        font-size: 1rem;
+    }
+
+    .btn-login button, .btn-signup button {
+        padding: 0.5rem 2rem;
+        font-size: 1.2rem;
+    }
+
+    .wrapper {
+        padding-top: 1rem;
+        gap: 10px;
+    }
+
+    .wrapper a {
+        padding: 10px 15px;
+        font-size: 1rem;
+        letter-spacing: 2px;
+    }
+}
